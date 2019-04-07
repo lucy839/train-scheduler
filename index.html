@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- reset  css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+
+    <!-- Link to Moment.js should go here -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|Ubuntu" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Train Schedule</title>
+</head>
+
+<body>
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Anytime is Train Time <i class="fas fa-train"></i></h1>
+            <p class="lead">Choo Choo!<i class="fas fa-wind"></i> Chee Chee!<i class="fas fa-wind"></i></p>
+        </div>
+    </div>
+
+    <!-- form that use can fill out -->
+    <div class="form">
+        <h1> Add Train <i class="fas fa-check-circle"></i></h1>
+        <form>
+            <div class="form-group">
+                <label for="InputTrainName">Train Name</label>
+                <input type="trainName" class="form-control" id="InputTrainName">
+            </div>
+            <div class="form-group">
+                <label for="InputDestination">Destination</label>
+                <input type="destination" class="form-control" id="InputDestination">
+            </div>
+            <div class="form-group">
+                <label for="InputFirstTrainTime">First Train Time (HH:mm - military time)</label>
+                <input type="firstTrainTime" class="form-control" id="InputFirstTrainTime">
+            </div>
+            <div class="form-group">
+                <label for="InputFrequency">Frequency (min)</label>
+                <input type="frequency" class="form-control" id="InputFrequency">
+            </div>
+            <small id="help" class="form-text text-muted"></small>
+            <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    <!-- display of trainlist  -->
+    <div class="trainList">
+        <h1> Current Train Schedule <i class="fas fa-clipboard-list"></i></h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min) </th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="table">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- javascripts -->
+    <script type="text/javascript" src="assets/javascript/config.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

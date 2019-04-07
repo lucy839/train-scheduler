@@ -1,0 +1,157 @@
+/* general */
+body{
+    background: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size:  cover; 
+}
+h1, p {
+    font-family: 'Dokdo', cursive;
+}
+.fa-check-circle, .fa-clipboard-list{
+    font-size: 30px;
+}
+label, th,td{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:25px;
+}
+.trainList h1 , .form h1{
+    background-color: hsla(200, 1%, 52%, 0.8);
+    margin-bottom: 0%;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* jumbotron */
+.jumbotron{
+    width:1000px;
+    height: 300px;
+    margin-left:14.5%;
+    padding:5%;
+    text-align: center;
+    background-color: hsla(0, 0%, 86%, 0.5);
+}
+.jumbotron h1{
+    font-weight: bold;
+    font-size: 80px;
+}
+.jumbotron p{
+    font-size: 30px;
+}
+
+/* trinalist */
+#table tr{
+    border-top:3px solid rgb(61, 61, 61);   
+}
+.trainList {
+    margin: 1%;
+    border: 3px solid rgb(61, 61, 61);
+    border-radius: 8px;
+    width:750px;
+    text-align: center;
+    background-color: hsla(0, 0%, 86%, 0.5);
+    margin-right: 5%;
+    float:right;
+    margin-top:0%;
+}
+
+/* form */
+.form h1{
+    border-bottom: 0.5px solid rgb(211, 211, 211);
+}
+.form{
+    width: 500px;
+    margin-left:5%;
+    border: 3px solid rgb(61, 61, 61);   
+    background-color: hsla(0, 0%, 86%, 0.5);
+    border-radius: 8px;
+    float:left;
+}
+form{
+    padding:2%;
+}
+label{
+    font-weight: bold;
+}
+#submitButton{
+    background:rgb(223, 220, 220); 
+    color: black;
+    border: 1px solid gray; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* media query */
+@media screen and (max-width: 980px) {
+    body{
+        background-size:250%;
+    }
+    .jumbotron{
+        width:800px;
+        margin-left: 9%;
+    }
+    .form{
+        width: 300px;
+         margin-left:2.5%;
+    }
+    .trainList {
+        width:600px;
+       margin-right: 2.5%;
+    }
+    .trainList h1 , .form h1{
+        font-size: 40px;
+    }
+    label, th,td{
+        font-size:20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    body{
+        background-size: 500%;
+   
+    }
+    .jumbotron{
+        width:650px;
+        margin-left: 8%;
+    }
+    .form{
+        width: 750px;
+        margin-left:1%; 
+        margin-bottom:3%;
+    }
+    .trainList {
+        width:750px;
+        margin-left:1%; 
+        float:left;
+    }
+    .trainList h1 , .form h1{
+        font-size: 50px;
+    }
+    label, th,td{
+        font-family: 'Ubuntu', sans-serif;
+        font-size:25px;
+    }
+}
+@media screen and (max-width: 640px) {
+    body{
+        background-size: 750%;
+   
+    }
+    .jumbotron{
+        width:550px;
+        margin-left: 6%;
+    }
+    .form{
+        width: 550px;
+        margin-left: 6%;
+    }
+    .trainList {
+        width: 550px;
+        margin-left: 6%;
+    }
+    .trainList h1 , .form h1{
+        font-size: 40px;
+    }
+    label, th,td{
+        font-size:18px;
+    }
+}

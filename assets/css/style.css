@@ -127,7 +127,6 @@ label{
         font-size: 50px;
     }
     label, th,td{
-        font-family: 'Ubuntu', sans-serif;
         font-size:25px;
     }
 }
@@ -153,5 +152,24 @@ label{
     }
     label, th,td{
         font-size:18px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .jumbotron{
+        width:450px;
+        margin-left: 10%;
+        height: 250px;
+    }
+    .jumbotron h1{
+        font-size: 50px;
+    }
+    .form{
+        width: 500px;
+    }
+    .trainList {
+        width: 500px;
+    }
+    label, th,td{
+        font-size:15px;
     }
 }

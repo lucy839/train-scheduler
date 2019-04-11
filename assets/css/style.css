@@ -131,26 +131,37 @@ label{
     }
 }
 @media screen and (max-width: 667px) {
+    .fa-train{
+        font-size:40px;
+    }
     body{
         background-size: 750%;
-   
     }
     .jumbotron{
-        width:550px;
-        margin-left: 6%;
+        width:520px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .jumbotron h1{
+        line-height:60px;
     }
     .form{
-        width: 550px;
-        margin-left: 6%;
+        width: 530px;
+        margin-left: 3%;
+        margin-right: 3%;
     }
     .trainList {
-        width: 550px;
-        margin-left: 6%;
+        width: 530px;
+        margin-left: 3%;
+        margin-right: 3%;
     }
     .trainList h1 , .form h1{
         font-size: 40px;
     }
-    label, th,td{
+    label, th{
         font-size:18px;
+    }
+    td{
+        font-size: 15px;
     }
 }

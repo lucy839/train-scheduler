@@ -138,23 +138,20 @@ label{
         background-size: 750%;
     }
     .jumbotron{
-        width:490px;
-        margin-left: 3%;
-        margin-right: 3%;
-        height:220px;
+        width:480px;
+        margin-left: 1.5%;
+        height:250px;
     }
     .jumbotron h1{
         line-height:60px;
     }
     .form{
-        width: 490px;
-        margin-left: 3%;
-        margin-right: 3%;
+        width: 480px;
+        margin-left: 1.5%;
     }
     .trainList {
-        width: 490px;
-        margin-left: 3%;
-        margin-right: 3%;
+        width: 480px;
+        margin-left: 1.5%;
     }
     .trainList h1 , .form h1{
         font-size: 30px;
@@ -169,7 +166,6 @@ label{
         font-size: 12px;
     }
     .delete{
-        /* font-size:12px; */
-        margin:9%;
+        margin:0%;
     }
 }

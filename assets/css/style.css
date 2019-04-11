@@ -130,7 +130,7 @@ label{
         font-size:25px;
     }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 667px) {
     body{
         background-size: 750%;
    
@@ -152,24 +152,5 @@ label{
     }
     label, th,td{
         font-size:18px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .jumbotron{
-        width:450px;
-        margin-left: 10%;
-        height: 250px;
-    }
-    .jumbotron h1{
-        font-size: 50px;
-    }
-    .form{
-        width: 500px;
-    }
-    .trainList {
-        width: 500px;
-    }
-    label, th,td{
-        font-size:15px;
     }
 }

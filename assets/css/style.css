@@ -130,7 +130,7 @@ label{
         font-size:25px;
     }
 }
-@media screen and (max-width: 667px) {
+@media screen and  (min-width : 375px) and (max-width : 667px) {
     .fa-train{
         font-size:40px;
     }
@@ -138,30 +138,38 @@ label{
         background-size: 750%;
     }
     .jumbotron{
-        width:520px;
+        width:490px;
         margin-left: 3%;
         margin-right: 3%;
+        height:220px;
     }
     .jumbotron h1{
         line-height:60px;
     }
     .form{
-        width: 530px;
+        width: 490px;
         margin-left: 3%;
         margin-right: 3%;
     }
     .trainList {
-        width: 530px;
+        width: 490px;
         margin-left: 3%;
         margin-right: 3%;
     }
     .trainList h1 , .form h1{
-        font-size: 40px;
+        font-size: 30px;
     }
-    label, th{
+    label{
         font-size:18px;
     }
+    th{
+        font-size: 12px;
+    }
     td{
-        font-size: 15px;
+        font-size: 12px;
+    }
+    .delete{
+        /* font-size:12px; */
+        margin:9%;
     }
 }

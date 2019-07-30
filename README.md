@@ -24,3 +24,5 @@
 ## Link to Game
 -   https://lucy839.github.io/train-scheduler/
 
+## Demo
+- ![Alt text](assets/images/demo.png?raw=true  "demo")      
